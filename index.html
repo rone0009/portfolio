@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/76bb045b15.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" >
+    <link href="./css/styles.css" rel="stylesheet" >
     <title>Abel Roney</title>
 </head>
 <body>
@@ -18,8 +18,9 @@
         </div>
         <ul class="menu">
           <li><a class="menulink current" href="./index.html">Home</a></li>
-          <li><a class="menulink" href="./about.html">About</a></li>
-          <li><a class="menulink" href="./contact.html">Contact</a></li>
+          <li><a class="menulink" href="#about">About</a></li>
+          <li><a class="menulink" href="#portfolio">Portfolio</a></li>
+          <li><a class="menulink" href="#contact">Contact</a></li>
         </ul>
     </section> 
 
@@ -32,8 +33,17 @@
         </div>    
       </div>
     </section>
+
+    <Section id="about" class="about-section">
+      <h1 class="about-h1">Abel Roney</h1>
+      <img class="about-image" src="./images/abelroney.jpeg" alt="profile pic of abel roney">
+      <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae facere, vitae, rerum nam quia id commodi laborum, sint eos consequatur accusantium quidem itaque voluptatibus culpa totam quaerat veniam repudiandae?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat quibusdam quo doloremque hic aliquid blanditiis necessitatibus aut voluptates recusandae possimus optio, veritatis, eveniet accusantium sapiente, ducimus vel animi error?
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore sunt quasi, iste tenetur, eos beatae expedita maiores architecto in consequatur ad nisi ullam quisquam vel! Error temporibus numquam ratione veniam.
+      </p>
+    </Section>
   
-    <section class="services">
+    <section id="portfolio" class="services">
       <h2 class="service-tag">Services</h2>
       
       <div class="service-grid1">
@@ -82,6 +92,44 @@
         </div>
       </div>    
     </section>
+
+    <Section id="contact" class="contact-section">
+      <h1 class="Contact-h1">Get In Touch With Us</h1>
+      <p class="contact-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae facere, vitae, rerum nam quia id commodi laborum, sint eos consequatur accusantium quidem itaque voluptatibus culpa totam quaerat veniam repudiandae?</p>
+
+      <div class="contact-grid1">
+          <section class="container">
+              <form action="/action_page.php">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name...">
+          
+              <label for="email">Mail ID</label>
+              <input type="email" id="email" name="email" placeholder="Mail ID...">
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
+
+  <!-- code for sbmit pop-up was refered from https://codeconvey.com/css-modal-popup-on-button-click/ -->
+
+              <div class="box">
+                  <a class="button" href="#popup1">Submit</a>
+              </div>
+              
+              <div id="popup1" class="overlay">
+                  <div class="popup">
+                      <h2 class="pop-h2">Thankyou for contacting us!</h2>
+                      <a class="close" href="#">&times;</a>
+                  </div>
+              </div>	
+              </form>
+          </section> 
+      
+          <section class="location-section">
+                  <h3 class="h3_loc">Location</h3>
+                  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6160.156086580552!2d-75.76328265371289!3d45.34630977888783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637973838499!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </section> 
+      </div>
+  </section> 
 
     <footer>
       <img class="footerimage" src="./images/ar-white.svg" alt="abel roney logo">
